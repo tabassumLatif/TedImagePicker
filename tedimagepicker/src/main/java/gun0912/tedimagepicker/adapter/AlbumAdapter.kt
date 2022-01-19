@@ -6,7 +6,7 @@ import gun0912.tedimagepicker.R
 import gun0912.tedimagepicker.base.BaseRecyclerViewAdapter
 import gun0912.tedimagepicker.base.BaseViewHolder
 import gun0912.tedimagepicker.builder.TedImagePickerBaseBuilder
-import gun0912.tedimagepicker.databinding.ItemAlbumBinding
+import gun0912.tedimagepicker.databinding.TedItemAlbumBinding
 import gun0912.tedimagepicker.model.Album
 import gun0912.tedimagepicker.util.TextFormatUtil
 
@@ -28,7 +28,7 @@ internal class AlbumAdapter(private val builder: TedImagePickerBaseBuilder<*>) :
     }
 
     inner class AlbumViewHolder(parent: ViewGroup) :
-        BaseViewHolder<ItemAlbumBinding, Album>(parent, R.layout.item_album) {
+        BaseViewHolder<TedItemAlbumBinding, Album>(parent, R.layout.ted_item_album) {
         override fun bind(data: Album) {
             binding.album = data
             binding.isSelected = adapterPosition == selectedPosition
